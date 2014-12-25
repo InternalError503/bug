@@ -1,0 +1,17 @@
+/*
+ * Copyright (c) 2014 8pecxstudios.com
+ */
+
+	#toolbar_F59AA44566417717EFF04935C0F81429_bug{
+		list-style-image: url("chrome://Bug/skin/bug_Sprite_button.png");
+		-moz-image-region: rect(0px 16px 16px 0px);
+	}
+	#toolbar_F59AA44566417717EFF04935C0F81429_bug[cui-areatype="menu-panel"]{
+		list-style-image: url("chrome://Bug/skin/bug_Sprite_button.png");
+		-moz-image-region: rect(0px 72px 32px 40px);
+	}
+
+	#toolbar_F59AA44566417717EFF04935C0F81429_bug:not([cui-areatype="toolbar"])> .toolbarbutton-icon{
+		list-style-image: url("chrome://Bug/skin/bug_Sprite_button.png");
+		-moz-image-region: rect(0px 72px 32px 40px);
+	}
