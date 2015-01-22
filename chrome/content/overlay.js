@@ -7,7 +7,33 @@ let formatedURL = "";
 
 var gBugMe = {
 
-		//Copies current tab url to clipboard	
+		init: function(e){
+		
+		try{
+
+		//Add click event listener to check for text selection in all elements not input fields.
+			window.addEventListener("click", function(){
+			
+			var _Numbers_Selected = document.commandDispatcher.focusedWindow.getSelection().toString();
+				//If the selection is all numbers and less then or equal to 8 it will construct the url and launch it in a new tab.
+				if(_Numbers_Selected){
+					var _is_num = /^\d+$/.test(_Numbers_Selected);
+						if (_is_num && _Numbers_Selected.length <= 8) {
+							formatedURL = 'https://bugzilla.mozilla.org/show_bug.cgi?id='+_Numbers_Selected+'';
+							document.commandDispatcher.focusedWindow.getSelection().removeAllRanges();							
+							gBrowser.selectedTab = openUILinkIn(formatedURL, 'tab');
+						}					
+				} 
+			}, false);
+			
+		
+		}catch (e){
+			//Catch any nasty errors and output to dialogue and console
+			alert("Were sorry but something has gone wrong with 'Bug initialize event' " + e);
+		}
+		
+		},
+	  //Copies current tab url to clipboard	
 		goToBug : function(e) {
 
 	    try{	
@@ -43,3 +69,5 @@ var gBugMe = {
 		}			
 	}	
 }
+
+window.addEventListener("load", function () { gBugMe.init(); }, false);
