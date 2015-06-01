@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-stylesheet href="chrome://Bug/skin/bugStyle.css" type="text/css"?>
 <!-- 
-Copyright (c) 2014 8pecxstudios.com
+Copyright (c) 2015 8pecxstudios.com
 -->
 <!DOCTYPE overlay [
 <!ENTITY % localeDTD SYSTEM "chrome://Bug/locale/locale.dtd" >
