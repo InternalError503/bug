@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2015 8pecxstudios.com
  */
-
+	#context_F59AA44566417717EFF04935C0F81429_bug,
 	#toolbar_F59AA44566417717EFF04935C0F81429_bug{
 		list-style-image: url("chrome://Bug/skin/bug_Sprite_button.png");
 		-moz-image-region: rect(0px 16px 16px 0px);

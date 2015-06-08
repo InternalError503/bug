@@ -10,6 +10,14 @@ Copyright (c) 2015 8pecxstudios.com
 
 <overlay id="Bug" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 <script src="chrome://Bug/content/overlay.js"/>
+	<menupopup id="contentAreaContextMenu">
+		<menuitem id="context_F59AA44566417717EFF04935C0F81429_bug"
+					iconic="true"
+					class="menuitem-iconic"
+					insertafter="context-inspect"
+					label="&gotobugcontext.label;"
+					oncommand="gBugMe.goToBug();"/>
+	</menupopup>
 	<toolbarpalette id="BrowserToolbarPalette">
         <toolbarbutton id="toolbar_F59AA44566417717EFF04935C0F81429_bug" 
 					   class="toolbarbutton-1 chromeclass-toolbar-additional "	
@@ -17,5 +25,5 @@ Copyright (c) 2015 8pecxstudios.com
 					   label="&gotobug.label;" 
 					   oncommand="gBugMe.goToBug();">
         </toolbarbutton>	
-    </toolbarpalette>			
+    </toolbarpalette>	
 </overlay>
