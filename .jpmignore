@@ -1,0 +1,20 @@
+# Ignore any zip or xpi files.
+*.zip
+*.xpi
+
+# Ignore any bat, cmd and sh files.
+*.bat
+*.cmd
+*.sh
+
+# Ignore visual studios code files.
+/.vscode/**
+
+# Ignore ones self
+*.jpmignore
+
+# Ignore markdown files.
+*.md
+
+# Ignore .git
+/.git/**

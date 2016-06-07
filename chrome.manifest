@@ -1,6 +1,0 @@
-content Bug chrome/content/
-skin Bug classic/1.0 chrome/skin/
-overlay chrome://browser/content/browser.xul chrome://Bug/content/Bug.xul
-
-#Locales
-locale Bug en-US chrome/locale/en-US/

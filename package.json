@@ -1,0 +1,16 @@
+{
+  "title": "Bug",
+  "name": "bug",
+  "id": "Bug@8pecxstudios.com",
+  "version": "1.0.3",
+  "description": "Select any bugzilla.mozilla.org bug number and press the button to go there or select and right click.",
+  "main": "index.js",
+  "author": "8pecxstudios",
+  "engines": {
+    "firefox": ">=29.0"
+  },
+  "license": "MPL-2.0",
+  "keywords": [
+    "jetpack"
+  ]
+}
